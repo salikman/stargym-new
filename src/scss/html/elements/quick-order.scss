@@ -1,0 +1,205 @@
+#quick-order, #quick-order-accepted {
+    display: none;
+    width: 100%;
+    padding: 16px;
+    background-color: #F5F7F9;
+    border-radius: 5px;
+}
+.order {
+    &-modal {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    &-title {
+        color: #1C1C30;
+        font-size: 22px;
+        font-weight: 500;
+    }
+
+    &-item {
+        display: grid;
+        grid-template-columns: 76px auto 25px;
+        gap: 10px;
+
+        &__img {
+            width: 76px;
+            height: 70px;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+
+        &__meta {
+            display: flex;
+            justify-content: space-between;
+
+            @media (max-width: 570px) {
+                justify-content: flex-start;
+                align-items: center;
+                flex-wrap: wrap;
+            }
+        }
+
+        &__title {
+            max-width: 200px;
+            padding: 0 5px;
+            color: #1C1C30;
+            font-size: 16px;
+            font-weight: 500;
+
+            @media (max-width: 570px) {
+                max-width: 100%;
+                width: 100%;
+            }
+        }
+
+        &__count {
+            padding: 0 5px;
+            color: $colorText;
+            font-size: 13px;
+            font-weight: 500;
+        }
+
+        &__price {
+            padding: 0 5px;
+            color: #1C1C30;
+            font-size: 16px;
+            font-weight: 500;
+        }
+
+        &__delete {
+            color: #999;
+            cursor: pointer;
+        }
+    }
+
+    &-total {
+        color: $btnColor;
+        text-align: right;
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    &-form {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        max-width: 400px;
+    }
+
+    &-input {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+
+        span {
+            color: #1C1C30;
+            font-size: 14px;
+            font-weight: 500;
+
+            b {
+                color: $color-4;
+                font-weight: 500;
+            }
+        }
+
+        input {
+            padding: 10px 20px;
+            background: white;
+            border: none;
+            color: #1C1C30;
+            font-size: 14px;
+            font-weight: 500;
+
+            &::placeholder {
+                color: rgba(#1C1C30, .5);
+            }
+        }
+    }
+
+    &-checkbox {
+        position: relative;
+        display: flex;
+        gap: 10px;
+        cursor: pointer;
+
+        input {
+            position: absolute;
+            opacity: 0;
+            visibility: hidden;
+
+            &:checked ~ span {
+                background: #065AA9;
+                border-color: #065AA9;
+
+                &:after {
+                    display: block;
+                }
+            }
+        }
+
+        span {
+            position: relative;
+            width: 24px;
+            height: 24px;
+            border: 1px solid #404C61;
+            border-radius: 4px;
+
+            &:after {
+                content: '';
+                position: absolute;
+                left: 8px;
+                top: 4px;
+                display: none;
+                width: 7px;
+                height: 12px;
+                border: solid white;
+                border-width: 0 3px 3px 0;
+                transform: rotate(45deg);
+                transition: all .3s ease;
+            }
+        }
+
+        p {
+            flex: 1;
+            color: #242424;
+            font-weight: 500;
+
+            a {
+                color: $btnColor;
+
+                &:hover {text-decoration: underline;}
+            }
+        }
+    }
+
+    &-button {
+        margin-top: 10px;
+    }
+
+    &-success {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        padding: 35px 0;
+
+        svg {
+            width: 65px;
+            height: 65px;
+            color: #065AA9;
+        }
+
+        p {
+            color: #1C1C30;
+            font-size: 22px;
+            font-weight: 500;
+        }
+    }
+}

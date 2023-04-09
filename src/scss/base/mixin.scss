@@ -1,0 +1,22 @@
+$primary: #38455F;
+$colorText: #55637C;
+$colorText-1: #38455F;
+$btnColor: #065AA9;
+$bgColor: #065AA9;
+$color-3: #D0DEE8;
+$sectionBg: #F5F7F9;
+$color-4: #FB4444;
+$color-5: #9098A9;
+$color-6: #FFC238;
+
+@mixin font($font_name, $file_name, $weight, $style) {
+
+    @font-face {
+        font-family: $font_name;
+        font-display: swap;
+        src: url("../fonts/#{$file_name}.woff") format("woff"),
+        url("../fonts/#{$file_name}.woff2") format("woff2");
+        font-weight: #{$weight};
+        font-style: #{$style};
+    }
+}

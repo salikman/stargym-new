@@ -1,0 +1,9 @@
+.footer {
+    padding: 40px 0;
+    background-color: $bgColor;
+    color: #fff;
+    &__copy {
+        text-align: center;
+        font-size: 14px;
+    }
+}

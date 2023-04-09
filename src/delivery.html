@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/base/head.html', {
+    "title": "Оформление заказа"
+})
+
+<body>
+    @@include('html/base/header.html', {})
+
+    <main>
+        <div class="breadcrumb">
+            <div class="container">
+                <ul>
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#">Корзина</a></li>
+                    <li>Оформление заказа</li>
+                </ul>
+            </div>
+        </div>
+
+        @@include('html/sections/delivery.html')
+
+        <section class="special-offers">
+            <div class="container">
+                <div class="special-offers__wrapper">
+                    <div class="special-offers__heading">
+                        <h2 class="special-offers__title">С продуктом также покупают</h2><span class="line"></span>
+                    </div>
+                    <div class="special-offers__list">
+                        <div class="special-offers__items js-special-offers">
+                            <div class="special-offers__item smooth">
+                                <div class="info">
+                                    <div class="img"><img src="img/special-offers/01.png" alt=""></div><a class="title"
+                                        href="#">Кроссовки мужские Nike Presto Fly World </a>
+                                </div>
+                                <div class="price"><span class="old">3499 грн</span><span class="current">2499 грн</span>
+                                </div>
+                                <div class="basket-overlay">
+                                    <div class="basket-overlay__quantity"><span class="minus">-</span>
+                                        <input type="text" name="1" value="1"><span class="plus">+</span>
+                                    </div>
+                                    <div class="basket-overlay__add-to-cart">
+                                        <button type="submit">В корзину</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="special-offers__item smooth">
+                                <div class="info">
+                                    <div class="img"><img src="img/special-offers/02.png" alt=""></div><a class="title"
+                                        href="#">Джемпер женский Nike Sportswear</a>
+                                </div>
+                                <div class="price"><span class="old">2899 грн</span><span class="current">1999 грн</span>
+                                </div>
+                                <div class="basket-overlay">
+                                    <div class="basket-overlay__quantity"><span class="minus">-</span>
+                                        <input type="text" name="1" value="1"><span class="plus">+</span>
+                                    </div>
+                                    <div class="basket-overlay__add-to-cart">
+                                        <button type="submit">В корзину</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="special-offers__item smooth">
+                                <div class="info">
+                                    <div class="img"><img src="img/special-offers/03.png" alt=""></div><a class="title"
+                                        href="#">Коврик для фитнеса Kettler</a>
+                                </div>
+                                <div class="price"><span class="old">2100 грн</span><span class="current">1499 грн</span>
+                                </div>
+                                <div class="basket-overlay">
+                                    <div class="basket-overlay__quantity"><span class="minus">-</span>
+                                        <input type="text" name="1" value="1"><span class="plus">+</span>
+                                    </div>
+                                    <div class="basket-overlay__add-to-cart">
+                                        <button type="submit">В корзину</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="special-offers__item smooth">
+                                <div class="info">
+                                    <div class="img"><img src="img/special-offers/04.png" alt=""></div><a class="title"
+                                        href="#">Сумка Head Djokovic 9</a>
+                                </div>
+                                <div class="price"><span class="old">3000 грн</span><span class="current">2199 грн</span>
+                                </div>
+                                <div class="basket-overlay">
+                                    <div class="basket-overlay__quantity"><span class="minus">-</span>
+                                        <input type="text" name="1" value="1"><span class="plus">+</span>
+                                    </div>
+                                    <div class="basket-overlay__add-to-cart">
+                                        <button type="submit">В корзину</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="special-offers__item smooth">
+                                <div class="info">
+                                    <div class="img"><img src="img/special-offers/04.png" alt=""></div><a class="title"
+                                        href="#">Сумка Head Djokovic 9</a>
+                                </div>
+                                <div class="price"><span class="old">3000 грн</span><span class="current">2199 грн</span>
+                                </div>
+                                <div class="basket-overlay">
+                                    <div class="basket-overlay__quantity"><span class="minus">-</span>
+                                        <input type="text" name="1" value="1"><span class="plus">+</span>
+                                    </div>
+                                    <div class="basket-overlay__add-to-cart">
+                                        <button type="submit">В корзину</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    @@include('html/base/footer.html', {})
+
+    @@include('html/elements/quick-order.html')
+
+    @@include('html/base/js.html')
+</body>
+</html>
