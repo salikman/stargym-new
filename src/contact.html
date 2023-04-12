@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/base/head.html', {
+    "title": "Тренировки"
+})
+
+<body>
+    @@include('html/base/header.html', {})
+
+    <main class="is-page">
+        <div class="breadcrumb">
+            <div class="container">
+                <ul>
+                    <li><a href="#">Главная</a></li>
+                    <li>Тренировки</li>
+                </ul>
+            </div>
+        </div>
+        <div class="page-content">
+            <div class="container">
+                <div class="row">
+                    <aside class="sidebar">
+                        <ul class="sidebar-menu">
+                            <li><a href="#">Тренировки</a></li>
+                            <li><a href="#">Статьи</a></li>
+                            <li><a href="#">Контакты</a></li>
+                            <li><a href="#">Все звёзды</a></li>
+                            <li><a href="#">Тренера</a></li>
+                            <li><a href="#">Фитнес-клубы</a></li>
+                            <li><a href="#">Секции</a></li>
+                            <li><a href="#">Школы танцев</a></li>
+                            <li><a href="#">Спорт магазины</a></li>
+                        </ul>
+                    </aside>
+                    <div class="content">
+                        <h1 class="content__title">Контакты</h1>
+                        <div class="contact">
+                            <p>Заказы через сайт принимаются круглосуточно!</p>
+                            <p style="color:#1C1C30;font-weight: 500;">График работы Call-центра</p>
+                            <p>Пн-Пт: 10:00-19:00<br>
+                                Сб: 10:00-15:00<br>
+                                Вс: выходной</p>
+                            <ul class="contact-list">
+                                <li><i class="fa fa-phone" aria-hidden="true"></i><a href="tel:+380636987411">+380 63 698 74 11</a></li>
+                                <li><i class="fa fa-envelope" aria-hidden="true"></i><a href="mailto:info@stargym.com.ua">info@stargym.com.ua</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    @@include('html/base/footer.html', {})
+
+    @@include('html/elements/quick-order.html')
+
+    @@include('html/base/js.html')
+</body>
+</html>

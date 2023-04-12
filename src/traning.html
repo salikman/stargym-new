@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+@@include('html/base/head.html', {
+    "title": "Тренировки"
+})
+
+<body>
+    @@include('html/base/header.html', {})
+
+    <main class="is-page">
+        <div class="breadcrumb">
+            <div class="container">
+                <ul>
+                    <li><a href="#">Главная</a></li>
+                    <li>Тренировки</li>
+                </ul>
+            </div>
+        </div>
+        <div class="page-content">
+            <div class="container">
+                <div class="row">
+                    <aside class="sidebar">
+                        <ul class="sidebar-menu">
+                            <li><a href="#">Тренировки</a></li>
+                            <li><a href="#">Статьи</a></li>
+                            <li><a href="#">Контакты</a></li>
+                            <li><a href="#">Все звёзды</a></li>
+                            <li><a href="#">Тренера</a></li>
+                            <li><a href="#">Фитнес-клубы</a></li>
+                            <li><a href="#">Секции</a></li>
+                            <li><a href="#">Школы танцев</a></li>
+                            <li><a href="#">Спорт магазины</a></li>
+                        </ul>
+                    </aside>
+                    <div class="content">
+                        <h1 class="content__title">Тренировки</h1>
+                        <div class="articles-list">
+                            <div class="article">
+                                <div class="article__img"><img src="@img/gallery/1.jpg" alt=""></div>
+                                <div class="article__title"><a href="#">Как правильно качать пресс?</a></div>
+                            </div> 
+                            <div class="article">
+                                <div class="article__img"><img src="@img/gallery/2.jpg" alt=""></div>
+                                <div class="article__title"><a href="#">Как показать лучший результат в жиме лежа</a></div>
+                            </div>
+                            <div class="article">
+                                <div class="article__img"><img src="@img/gallery/3.jpg" alt=""></div>
+                                <div class="article__title"><a href="#">Четыре способа добиться результатов в спортзале</a></div>
+                            </div>
+                            <div class="article">
+                                <div class="article__img"><img src="@img/gallery/4.jpg" alt=""></div>
+                                <div class="article__title"><a href="#">Основные ошибки в тренажерном зале</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    @@include('html/base/footer.html', {})
+
+    @@include('html/elements/quick-order.html')
+
+    @@include('html/base/js.html')
+</body>
+</html>

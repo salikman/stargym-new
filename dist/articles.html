@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css?_v=20230412154816" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css?_v=20230412154816">
     <link rel="stylesheet" href="css/style.min.css?_v=20230412154816">
-    <title>Корзина</title>
+    <title>Тренировки</title>
 </head>
 
 <body>
@@ -117,158 +117,59 @@
   </div>
 </header>
 
-    <main>
+    <main class="is-page">
         <div class="breadcrumb">
             <div class="container">
                 <ul>
                     <li><a href="#">Главная</a></li>
-                    <li>Корзина</li>
+                    <li>Тренировки</li>
                 </ul>
             </div>
         </div>
-
-        <div class="order">
-    <div class="container">
-        <div class="order-wrapper">
-            <div class="order-stage">
-                <div class="current">Корзина</div>
-                <div>Доставка</div>
-                <div>Оплата</div>
-            </div>
-            <div class="order-checkout">
-                <div class="order-heading">
-                    <div>Товар</div>
-                    <div>Описание</div>
-                    <div>Цена</div>
-                    <div>Количество</div>
-                    <div>Количество</div>
-                </div>
-                <div class="order-list">
-                    <div class="item">
-                        <div class="item__img"><picture><source srcset="img/product.webp" type="image/webp"><img src="img/product.jpg" alt=""></picture></div>
-                        <div class="item__title">Коньки хоккейные ССМ SK 9040 SE</div>
-                        <div class="item__price">5499 грн</div>
-                        <div class="item__count">
-                            <span class="minus">−</span>
-                            <input class="count" type="text" name="" value="1">
-                            <span class="plus">+</span>
+        <div class="page-content">
+            <div class="container">
+                <div class="row">
+                    <aside class="sidebar">
+                        <ul class="sidebar-menu">
+                            <li><a href="#">Тренировки</a></li>
+                            <li><a href="#">Статьи</a></li>
+                            <li><a href="#">Контакты</a></li>
+                            <li><a href="#">Все звёзды</a></li>
+                            <li><a href="#">Тренера</a></li>
+                            <li><a href="#">Фитнес-клубы</a></li>
+                            <li><a href="#">Секции</a></li>
+                            <li><a href="#">Школы танцев</a></li>
+                            <li><a href="#">Спорт магазины</a></li>
+                        </ul>
+                    </aside>
+                    <div class="content">
+                        <h1 class="content__title">Тренировки</h1>
+                        <div class="articles-list">
+                            <div class="article">
+                                <a href="#" class="article__img"><picture><source srcset="img/gallery/1.webp" type="image/webp"><img src="img/gallery/1.jpg" alt=""></picture></a>
+                                <div class="article__date">13.03.2019</div>
+                                <div class="article__title"><a href="#">Как правильно качать пресс?</a></div>
+                            </div> 
+                            <div class="article">
+                                <a href="#" class="article__img"><picture><source srcset="img/gallery/2.webp" type="image/webp"><img src="img/gallery/2.jpg" alt=""></picture></a>
+                                <div class="article__date">13.03.2019</div>
+                                <div class="article__title"><a href="#">Как показать лучший результат в жиме лежа</a></div>
+                            </div>
+                            <div class="article">
+                                <a href="#" class="article__img"><picture><source srcset="img/gallery/3.webp" type="image/webp"><img src="img/gallery/3.jpg" alt=""></picture></a>
+                                <div class="article__date">13.03.2019</div>
+                                <div class="article__title"><a href="#">Четыре способа добиться результатов в спортзале</a></div>
+                            </div>
+                            <div class="article">
+                                <a href="#" class="article__img"><picture><source srcset="img/gallery/4.webp" type="image/webp"><img src="img/gallery/4.jpg" alt=""></picture></a>
+                                <div class="article__date">13.03.2019</div>
+                                <div class="article__title"><a href="#">Основные ошибки в тренажерном зале</a></div>
+                            </div>
                         </div>
-                        <div class="item__sum">5499 грн</div>
-                        <div class="item__delete"><i class="fa fa-shopping-basket" aria-hidden="true"></i></div>
-                    </div>
-                    <div class="item">
-                        <div class="item__img"><picture><source srcset="img/product.webp" type="image/webp"><img src="img/product.jpg" alt=""></picture></div>
-                        <div class="item__title">Коньки хоккейные ССМ SK 9040 SE</div>
-                        <div class="item__price">5499 грн</div>
-                        <div class="item__count">
-                            <span class="minus">−</span>
-                            <input class="count" type="text" name="" value="1">
-                            <span class="plus">+</span>
-                        </div>
-                        <div class="item__sum">5499 грн</div>
-                        <div class="item__delete"><i class="fa fa-shopping-basket" aria-hidden="true"></i></div>
                     </div>
                 </div>
-                <div class="order-sum"><p>Сума заказа <span>5499 грн</span></p></div>
-                <button class="order-btn btn">Оформить заказ</button>
             </div>
         </div>
-    </div>
-</div>
-
-        <section class="special-offers">
-            <div class="container">
-                <div class="special-offers__wrapper">
-                    <div class="special-offers__heading">
-                        <h2 class="special-offers__title">С продуктом также покупают</h2><span class="line"></span>
-                    </div>
-                    <div class="special-offers__list">
-                        <div class="special-offers__items js-special-offers">
-                            <div class="special-offers__item smooth">
-                                <div class="info">
-                                    <div class="img"><picture><source srcset="img/special-offers/01.webp" type="image/webp"><img src="img/special-offers/01.png" alt=""></picture></div><a class="title"
-                                        href="#">Кроссовки мужские Nike Presto Fly World </a>
-                                </div>
-                                <div class="price"><span class="old">3499 грн</span><span class="current">2499 грн</span>
-                                </div>
-                                <div class="basket-overlay">
-                                    <div class="basket-overlay__quantity"><span class="minus">-</span>
-                                        <input type="text" name="1" value="1"><span class="plus">+</span>
-                                    </div>
-                                    <div class="basket-overlay__add-to-cart">
-                                        <button type="submit">В корзину</button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="special-offers__item smooth">
-                                <div class="info">
-                                    <div class="img"><picture><source srcset="img/special-offers/02.webp" type="image/webp"><img src="img/special-offers/02.png" alt=""></picture></div><a class="title"
-                                        href="#">Джемпер женский Nike Sportswear</a>
-                                </div>
-                                <div class="price"><span class="old">2899 грн</span><span class="current">1999 грн</span>
-                                </div>
-                                <div class="basket-overlay">
-                                    <div class="basket-overlay__quantity"><span class="minus">-</span>
-                                        <input type="text" name="1" value="1"><span class="plus">+</span>
-                                    </div>
-                                    <div class="basket-overlay__add-to-cart">
-                                        <button type="submit">В корзину</button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="special-offers__item smooth">
-                                <div class="info">
-                                    <div class="img"><picture><source srcset="img/special-offers/03.webp" type="image/webp"><img src="img/special-offers/03.png" alt=""></picture></div><a class="title"
-                                        href="#">Коврик для фитнеса Kettler</a>
-                                </div>
-                                <div class="price"><span class="old">2100 грн</span><span class="current">1499 грн</span>
-                                </div>
-                                <div class="basket-overlay">
-                                    <div class="basket-overlay__quantity"><span class="minus">-</span>
-                                        <input type="text" name="1" value="1"><span class="plus">+</span>
-                                    </div>
-                                    <div class="basket-overlay__add-to-cart">
-                                        <button type="submit">В корзину</button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="special-offers__item smooth">
-                                <div class="info">
-                                    <div class="img"><picture><source srcset="img/special-offers/04.webp" type="image/webp"><img src="img/special-offers/04.png" alt=""></picture></div><a class="title"
-                                        href="#">Сумка Head Djokovic 9</a>
-                                </div>
-                                <div class="price"><span class="old">3000 грн</span><span class="current">2199 грн</span>
-                                </div>
-                                <div class="basket-overlay">
-                                    <div class="basket-overlay__quantity"><span class="minus">-</span>
-                                        <input type="text" name="1" value="1"><span class="plus">+</span>
-                                    </div>
-                                    <div class="basket-overlay__add-to-cart">
-                                        <button type="submit">В корзину</button>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="special-offers__item smooth">
-                                <div class="info">
-                                    <div class="img"><picture><source srcset="img/special-offers/04.webp" type="image/webp"><img src="img/special-offers/04.png" alt=""></picture></div><a class="title"
-                                        href="#">Сумка Head Djokovic 9</a>
-                                </div>
-                                <div class="price"><span class="old">3000 грн</span><span class="current">2199 грн</span>
-                                </div>
-                                <div class="basket-overlay">
-                                    <div class="basket-overlay__quantity"><span class="minus">-</span>
-                                        <input type="text" name="1" value="1"><span class="plus">+</span>
-                                    </div>
-                                    <div class="basket-overlay__add-to-cart">
-                                        <button type="submit">В корзину</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
     </main>
 
     <footer class="footer">
